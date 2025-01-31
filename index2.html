@@ -46,34 +46,43 @@
   <header class="">
     <!-- Navigation Section -->
     <nav class="bg-ps-primary">
-      <div class="navbar md:container mx-auto">
-        <div class="navbar-start">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start flex w-screen justify-between lg:w-full lg:justify-center">
           <img src="./c1-assets/logo-header.png" alt="">
-          <a class="lg:flex btn btn-ghost text-[26px] font-normal">Browse<span class="text-ps-accent">4</span>Pets</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Find a pet</a></li>
-          <li><a>Breeds</a></li>
-          <li><a>Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-          <div class="dropdown relative">
+          <a class="hidden lg:flex btn btn-ghost text-[26px] font-normal">Browse<span class="text-ps-accent">4</span>Pets</a>
+          <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg> -->
               <i class="fa-solid fa-bars"></i>
             </div>
             <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow absolute right-2">
-            <li><a>Find a pet</a></li>
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Find a pet</a></li>
               <li><a>Breeds</a></li>
               <li><a>Contact Us</a></li>
-              <a class="btn py-1 px-8 mb-2 bg-ps-primary hover:text-yellow-400 border border-ps-accent mr-3 hover:bg-ps-primary hover:border-yellow-300">Login</a>
-              <a class="btn py-1 px-8 bg-ps-accent hover:border-ps-accent hover:bg-yellow-400">Register</a>
             </ul>
           </div>
-          <!-- <a class="btn hidden lg:flex">Button</a> -->
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl text-ps-text">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex">
           <button class="hidden btn btn-ghost btn-circle lg:flex">
             <div class="indicator">
               <svg
@@ -104,6 +113,7 @@
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
+          <!-- <a class="btn bg-ps-primary border border-ps-accent mr-3 hover:bg-ps-accent">Login</a> -->
           <a class="hidden lg:flex btn py-2 px-8 bg-ps-primary hover:text-yellow-400 border border-ps-accent mr-3 hover:bg-ps-primary hover:border-yellow-300">Login</a>
           <a class="hidden lg:flex btn py-2 px-8 bg-ps-accent hover:border-ps-accent hover:bg-yellow-400">Register</a>
         </div>
