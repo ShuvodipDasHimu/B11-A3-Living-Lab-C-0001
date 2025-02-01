@@ -128,7 +128,7 @@
   <!-- Main Section -->
   <main class="">
     <!-- Categories Section -->
-    <div class="mt-96 container mx-auto">
+    <div class="mt-56 lg:mt-96 container mx-auto">
       <h1 class="text-2xl lg:text-4xl font-adlam-display mb-12 ml-4">Browse By Categories</h1>
       <div class="grid grid-cols-2 gap-y-4 lg:grid-cols-6 place-items-center">
         <div class="bg-ps-card-bg flex flex-col gap-2 items-center justify-center w-44 h-56 lg:h-64 lg:w-52 rounded-lg">
@@ -188,9 +188,9 @@
       </div>
     </div>
     <!-- Trending Products Section -->
-    <div class="mt-32 lg:pt-36 lg:pb-36 bg-ps-primary mb-36">
+    <div class="mt-24 lg:mt-32 lg:pt-36 lg:pb-36 bg-ps-primary lg:mb-36 mb-20">
       <div class="container mx-auto">
-        <h1 class="font-adlam-display text-4xl ml-6 mb-12">Trending Pet Products</h1>
+        <h1 class="font-adlam-display text-2xl lg:text-4xl ml-6 mb-12">Trending Pet Products</h1>
       <div class="flex flex-col lg:flex-row gap-12 ml-4">
         <div class="card bg-ps-card-bg w-96 h-[436px]">
           <div class="card-body space-y-2">
@@ -301,7 +301,7 @@
       </div>
     </div>
     <!-- Everyday Section -->
-    <div class="container mx-auto mb-36">
+    <div class="container mx-auto lg:-mb-36 -mb-52">
       <h1 class="text-4xl font-adlam-display mb-8 ml-10">Everyday low Price</h1>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-0">
         <div class="h-[335px] bg-gradient-to-r w-4/5 lg:col-span-7 lg:w-[90%] mx-auto lg:h-[480px] from-[#F7CCFB] to-[#AFD2FD] rounded-lg lg:-ml-0">
@@ -327,7 +327,7 @@
       </div>
     </div>
     <!-- Pawsome News Section -->
-    <div class="bg-ps-primary h-[523px] lg:h-[491px] w-[90%] container mx-auto pt-8 lg:flex lg:p-10 lg:gap-36">
+    <div class="relative top-64 bg-ps-primary h-[523px] lg:h-[491px] w-[90%] container mx-auto pt-8 lg:flex lg:p-10 lg:gap-36">
       <div>
         <img class="w-1/2 mx-auto lg:w-full" src="./c1-assets/cute-pet-mid.png" alt="">
       </div>
@@ -343,6 +343,30 @@
   </main>
 
   <!-- Footer Section -->
-  <footer></footer>
+  <footer class="bg-[#FFED93] pt-80 lg:pt-96 pb-24">
+    <footer class="footer container mx-auto text-base-content p-10">
+      <nav class="lg:-ml-9">
+        <div class="flex items-center gap-2">
+          <img src="./c1-assets/logo-footer.png" alt="">
+          <span class="text-xl lg:text-3xl">Browse<span class="text-ps-accent">4</span>Pets</span>
+        </div>
+        <p class="lg:text-xl opacity-70 ">Discover a world of treats, toys, and<br> essentials handpicked for your furry friends</p>
+      </nav>
+      <nav class="space-y-3">
+        <a class="link link-hover text-sm lg:text-xl">Find a pet</a>
+        <a class="link link-hover text-sm lg:text-xl">Breeds</a>
+        <a class="link link-hover text-sm lg:text-xl">Contact Us</a>
+      </nav>
+      <nav class="lg:relative lg:left-64">
+        <h6 class="footer-title capitalize">Follow Us</h6>
+        <div class="grid grid-flow-col gap-4 text-2xl lg:text-3xl space-x-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </nav>
+    </footer>
+  </footer>
 </body>
 </html>
